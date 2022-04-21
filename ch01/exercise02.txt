@@ -1,0 +1,7 @@
+From ghci, type :? to print some help. Define a variable, such as x = 1, then type :show bindings. What do you see?
+
+Answer:
+
+typing :? shows the list of all the commands available in ghci along with their functionality.
+
+typing :show bindings after defining x = 1, showed the variable x including its type signature (x :: Num p => p = _)
