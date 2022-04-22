@@ -1,0 +1,10 @@
+Haskell provides a standard function, last :: [a] -> a, that returns the last element of a list.
+From reading the type alone, what are the possible valid behaviours (omitting crashes and infinite loops) that this function could have? What are a few things that this function clearly cannot do?
+
+Answer:
+
+It can return the last element in a list of any data type, as long as it contains at least one element.
+
+It goes into an infinite loop when given an argument that is an infinite list.
+It cannot return the last element of an empty list, it throws this exception instead:
+*** Exception: Prelude.last: empty list
