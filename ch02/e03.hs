@@ -3,6 +3,7 @@
 lastButOne :: [a] -> a
 lastButOne xs = if null (tail (tail xs)) then head xs else lastButOne (tail xs)
 
+--Or
 lastButOne' :: [a] -> a
 lastButOne' (x:_:[]) = x
 lastButOne' (_:y:zs)   = lastButOne' (y:zs)
