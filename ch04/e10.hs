@@ -34,7 +34,7 @@ unlines' xs = foldr helper [] xs
 
 --Answer:
 
---I used foldr for any' function because (\x acc -> if f x then True else acc) is non-strict in its 2nd argument which is the acc.
+--I used foldr for any function because (\x acc -> if f x then True else acc) is non-strict in its 2nd argument which is the acc.
 
 --I used foldr for the cycle function because it produces an infinite list.
 
@@ -44,4 +44,3 @@ unlines' xs = foldr helper [] xs
 --Preludes unlines function concatinates a list of strings with a '\n' in the end of each string
 --I used foldr for unlines' to be able to use the "cons" (:) operator,
 --Using foldl' would require the use of (++) operator in order to add a '\n' to the last string, which is less efficient than (:).
---However I was forced to use the dropwhile function 
