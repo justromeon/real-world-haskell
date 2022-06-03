@@ -1,3 +1,6 @@
+{-# OPTIONS_GHC -Wno-unrecognised-pragmas #-}
+{-# HLINT ignore "Eta reduce" #-}
+{-# HLINT ignore "Use sortOn" #-}
 import Control.Arrow ((&&&))
 import Data.List (sortBy)
 import Data.Ord  (comparing)
