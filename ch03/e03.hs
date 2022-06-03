@@ -5,4 +5,5 @@ len []     = 0
 len (_:xs) = 1 + len xs
 
 --Or
+len' :: Num p => [a] -> p
 len' = foldr (\_ n -> 1 + n) 0
